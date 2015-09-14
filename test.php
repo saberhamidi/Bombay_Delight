@@ -16,6 +16,8 @@ for($i =0; $i<count($cars); $i++){
 	}
 }
 
+//changed
+
 $cars = array_values($cars);
 
 echo "<pre>";
