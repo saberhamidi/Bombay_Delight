@@ -17,7 +17,7 @@ for($i =0; $i<count($cars); $i++){
 }
 
 $cars = array_values($cars);
-
+// test this site by Zia
 echo "<pre>";
 print_r($cars);
 echo "</pre>";	
