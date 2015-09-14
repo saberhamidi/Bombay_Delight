@@ -123,34 +123,34 @@
 </div>
 
 
-<div class="container col-md-11 col-md-offset-1 col-sm-12 bottom_space">
+<div class="container col-md-10 col-md-offset-1 col-sm-12 bottom_space">
 	<div class="col-md-12 col-xs-10 col-xs-offset-0 ">
-		<div class="col-md-3 col-sm-5 col-xs-12 col-xs-offset-0 top10">
+		<div class="col-md-4 col-sm-5 col-xs-12 col-xs-offset-0 top10">
 			<img class="chef_img" src="images/Mains-Salad-Tuna-with-Stir-Fry-thumb.jpeg">
 			Mains Salad Tuna with Stir Fry swelcome text hereIs branched in my up strictly remember. Songs but chief has ham widow downs. 
 			Genius or so vanity cannot. Large
 		</div>
-		<div class="col-md-3 col-sm-5 col-xs-12 col-xs-offset-0 top10">
+		<div class="col-md-4 col-sm-5 col-xs-12 col-xs-offset-0 top10">
 			<img class="chef_img" src="images/rice-fire-cracker-chicken.jpeg">
 			Rice Fire Cracker Chicken swelcome text hereIs branched in my up strictly remember. Songs but chief has ham widow downs. 
 			Genius or so vanity cannot. Large
 		</div>
-		<div class="col-md-3 col-sm-5 col-xs-12 col-xs-offset-0 top10">
+		<div class="col-md-4 col-sm-5 col-xs-12 col-xs-offset-0 top10">
 			<img class="chef_img" src="images/Chicken-Pad-Thai.jpeg">
 			Chicken Pad Thai swelcome text hereIs branched in my up strictly remember. Songs but chief has ham widow downs. 
 			Genius or so vanity cannot. Large
 		</div>
-		<div class="col-md-3 col-sm-5 col-xs-12 col-xs-offset-0 top10">
+		<div class="col-md-4 col-sm-5 col-xs-12 col-xs-offset-0 top10">
 			<img class="chef_img" src="images/Girlled-meat.jpeg">
 			Grilled Beef Kebab swelcome text hereIs branched in my up strictly remember. Songs but chief has ham widow downs. 
 			Genius or so vanity cannot. Large
 		</div>
-		<div class="col-md-3 col-sm-5 col-xs-12 col-xs-offset-0 top10">
+		<div class="col-md-4 col-sm-5 col-xs-12 col-xs-offset-0 top10">
 			<img class="chef_img" src="images/beef-steak.jpeg">
 			Grilled Beef Steak swelcome text hereIs branched in my up strictly remember. Songs but chief has ham widow downs. 
 			Genius or so vanity cannot. Large
 		</div>
-		<div class="col-md-3 col-sm-5 col-xs-12 col-xs-offset-0 top10">
+		<div class="col-md-4 col-sm-5 col-xs-12 col-xs-offset-0 top10">
 			<img class="chef_img" src="images/Best-pizza.jpeg">
 			Bombay Delight House Special Pizza swelcome text hereIs branched in my up remember. Songs but chief has ham widow downs. 
 			Genius or so vanity cannot. Large
