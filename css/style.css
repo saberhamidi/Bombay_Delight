@@ -1,0 +1,250 @@
+/*
+*
+********* normal.css provides a basic website layout **********
+*
+*
+* * It uses the CSS3 idea of defined sections, and uses "DIV Container or Main"
+* ** as a container element.
+*
+ * style.css provides overwite of Bootstrap frameworks
+ *
+ * It uses the CSS3 idea of defined sections, and uses "main"
+ * as a container element.
+ * 
+ * @author Zia Ahmed <za2e13@ecs.soton.ac.uk>
+ * @version 08-12-2014, 06:15h
+ * @copyright 2014 Red Carpet Films
+ *
+*/
+.black{
+	background-color: black;
+}
+.red{
+	background-color: red;
+}
+
+.green{
+	background-color: green;
+}
+
+.yellow{
+	background-color: yellow;
+}
+
+.orange{
+	background-color: orange;
+}
+
+.blue{
+	background-color: blue;
+}
+
+
+
+
+
+
+
+/* general CSS style throught all the site */
+.top10{
+	margin-top: 10px;
+}
+
+.text_justity{
+	text-align: justify;
+}
+
+
+
+
+
+
+
+/* main bode style */
+
+
+body { 
+	/*margin-bottom: 90px; */
+ 	font-family: 'Raleway', sans-serif;
+ 	margin: 200px 0 0px 0;
+ 	background-color: #c7c5c5;
+}
+
+
+
+
+
+/* menu design */
+
+.logo{
+	width: 100%;
+}
+
+.logo img{
+	width: 100%;
+}
+
+.order_button{
+	width: 100%;
+	font-size: 1.5em;
+	margin-left: 10%;
+}
+
+.text_center {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+   } 
+ 
+.text_center li {
+    float: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.tel{
+	font-size: 2.1em;
+}
+
+
+
+
+
+
+
+/* footer design */
+
+.footer_bakg{
+	background-color: #f0f0f0;
+}
+
+.bottom_space{
+	margin-bottom: 50px;
+}
+
+
+
+bottom_margin{
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* index page design */
+
+.welcome_image{
+	width: 100%;
+	border-radius: 10px;
+	height: 200px;
+}
+
+.welcome_image img{
+	width: 100%;
+}
+
+
+
+
+
+/* welcome image in the index page */
+.chef_img{
+	width: 95%;
+	height: 200px;
+	border-radius: 80%;
+}
+
+.bottom_space div{
+	margin-left: 30px;
+	text-align: justify;
+}
+
+
+
+
+/* slider image design in the index page*/
+
+.slider{
+	width: 100%;
+	
+}
+
+.slider img{
+	width: 100%;
+}
+
+.carousel-inner img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+
+.carousel-control.right {
+    background-image: red;
+    left: auto;
+    right: 0;
+}
+
+.carousel-control.right{
+	
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0)100%);
+}
+
+
+.carousel-control.left{
+	
+	background-image: linear-gradient(to left, rgba(0,0,0,0) 0px, rgba(0,0,0,0)100%);
+}
+
+
+/* about page design */
+.abt_image img{
+	border-radius: 40px;
+}
+
+
+
+
+
+/* contcat page design */
+.googleMap{
+	width: 100%;
+}
+
+
+
+
+.margin-bottom{
+	margin-bottom: 190px;
+}
+
+
+.margin-top{
+	margin-top: 150px;
+}
+
+.sign-margin-top{
+	margin-top: 70px;
+}
+
+.test{
+	margin-top: 90px;
+}
+
+.error{
+	color: red;
+}
+
+
+
+
+
+
+
+  
