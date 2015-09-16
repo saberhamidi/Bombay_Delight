@@ -6,7 +6,7 @@
 	}
 	
 	include_once 'includes/header.php';
-	include_once 'includes/db.php';
+	include 'includes/db.php';
 ?>
 
 

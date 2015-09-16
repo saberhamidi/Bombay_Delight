@@ -40,7 +40,7 @@
 	if($validate){
 		
 		require "includes/db.php";
-		$users =$conn -> query("SELECT* FROM Login WHERE Email='$userName' AND Password ='$pass'");
+		$users =$conn -> query("SELECT* FROM user WHERE email='$userName' AND password ='$pass'");
 
 		if($users->num_rows==1){
 			$_SESSION["loggedIn"] =true;

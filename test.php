@@ -1,26 +1,14 @@
 <?php
 	
-	//session_start();
-$cars = array("toyota", "bmw", "audi", "range rover","toyota", "bmw", "audi", "range rover","toyota", "bmw", "audi", "range rover");
+	session_start();
+$user_id = $_SESSION["username"]; 
+include "includes/db.php"; 
+$categorys = $conn->query("SELECT firstname FROM user WHERE email = '$user_id'");
 
 echo "<pre>";
-print_r($cars);
+print_r($categorys);
 echo "</pre>";
 
+echo $categorys->fetch_object()->firstname;
 
-for($i =0; $i<count($cars); $i++){
-	
-	if($cars[$i]== "bmw"){
-		
-		unset($cars[$i]);
-	}
-}
-
-//test by Zia again
-
-$cars = array_values($cars);
-
-echo "<pre>";
-print_r($cars);
-echo "</pre>";	
 ?>

@@ -40,8 +40,8 @@
 			
 			
 			<div class="col-md-4 col-sm-12 col-xs-12 top10 pull-right">
-				<p class="col-md-4 col-sm-4 col-xs-12"><a href="sign_in.php?page=dashBoard">Log-<span id="user_name">in</span></a></p>
-				<p class="col-md-4 col-sm-4 col-xs-12"><a href="register.php">Sign-up</a></span></p>
+				<p class="col-md-4 col-sm-4 col-xs-12"><?php if(isset($_SESSION["loggedIn"]) and $_SESSION["loggedIn"] == true){$user_id = $_SESSION["username"]; include "includes/db.php"; $name = $conn -> query("SELECT firstname FROM user WHERE email='$user_id'"); echo "Welcome ".$name->fetch_object()->firstname;} else { echo "<a href='sign_in.php?page=dashBoard'>Log-in</a>";} ?></p>
+				<p class="col-md-4 col-sm-4 col-xs-12"><a <?php if(isset($_SESSION["loggedIn"]) and $_SESSION["loggedIn"] == true){echo "href='dashBoard.php'>My Account";} else{ echo "href='register.php'>Sign-up";}?></a></span></p>
 				<p class="col-md-4 col-sm-4 col-xs-12"><a href="orderConfirmation.php">Basket</a></span></p>
 			</div>
 			
