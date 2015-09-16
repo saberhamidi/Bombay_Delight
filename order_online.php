@@ -52,7 +52,7 @@
 			<h3><u>Shopping Chart</u></h3>
 			<div class="text-left" id = "items">
 			</div>
-			<a href="sign_in.php"><p class="btn btn-primary col-md-10 col-md-offset-1 col-sm-12 col-xs-12">Continue</p></a>
+			<a href="orderConfirmation.php"><p class="btn btn-primary col-md-10 col-md-offset-1 col-sm-12 col-xs-12">Secure Checkout</p></a>
 			
 		</div>
 </div>

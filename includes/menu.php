@@ -40,9 +40,9 @@
 			
 			
 			<div class="col-md-4 col-sm-12 col-xs-12 top10 pull-right">
-				<p class="col-md-4 col-sm-4 col-xs-12"><a href="sign_in.php">Log-<span id="user_name">in</span></a></p>
+				<p class="col-md-4 col-sm-4 col-xs-12"><a href="sign_in.php?page=dashBoard">Log-<span id="user_name">in</span></a></p>
 				<p class="col-md-4 col-sm-4 col-xs-12"><a href="register.php">Sign-up</a></span></p>
-				<p class="col-md-4 col-sm-4 col-xs-12"><a href="OrderConfirm.php">Basket</a></span></p>
+				<p class="col-md-4 col-sm-4 col-xs-12"><a href="orderConfirmation.php">Basket</a></span></p>
 			</div>
 			
 			

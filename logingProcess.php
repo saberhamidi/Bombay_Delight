@@ -6,7 +6,7 @@
 	$userName = $pass=""; 
 	$validate = true;
 	$error;
-	
+	$page = $_GET["page"];
 	//check if the user input is empty
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		if (empty($_POST["userName"]) || empty($_POST["password"]) ) {
@@ -45,22 +45,28 @@
 		if($users->num_rows==1){
 			$_SESSION["loggedIn"] =true;
 			$_SESSION["username"] =$userName;
-			$_SESSION["person_id"] =$pass;
+			$_SESSION["password"] =$pass;
 			
-			header("location: profile.php");
+			if($page == "basket"){
+				header("location: orderConfirmation.php");
+			}
+			
+			else{
+				header("location: dashBoard.php");
+			}
 
 		}
 		
 		else{
 			$error =3;
-			header("location: sign_in.php?error=$error");
+			header("location: sign_in.php?error=$error&page=$page");
 		}
 	}
 	
 	
 	
 	else{
-		header("location: sign_in.php?error=$error");
+		header("location: sign_in.php?error=$error&page=$page");
 	}
 	
 

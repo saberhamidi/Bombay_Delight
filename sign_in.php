@@ -30,7 +30,7 @@
 		?>
 		<h3 class=" col-md-12 text-center">Please log-in</h3>
 		
-		<form onsubmit="return validateSignIn(this)" method="post" action="logingProcess.php">
+		<form onsubmit="return validateSignIn(this)" method="post" action="logingProcess.php?page=<?php echo $_GET['page'];?>">
 			<div class="form-group col-md-12 col-sm-12 ">
 					<h5 id = "user" class="text-center">Email address</h5>
 					<input type="text"  name="userName" class="form-control text-lowercase">

@@ -1,4 +1,8 @@
 <?php
+	session_start();
+	if($_SESSION["loggedIn"] !=true){
+		header("location: sign_in.php?page=dashBoard");
+	}
 	
 	include_once 'includes/header.php';
 	include_once 'includes/db.php';

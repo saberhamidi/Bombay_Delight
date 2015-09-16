@@ -1,4 +1,9 @@
 <?php
+	session_start();
+	
+	if($_SESSION["loggedIn"] !=true){
+		header("location: sign_in.php?page=basket");
+	}
 	
 	include_once 'includes/header.php';
 	include_once 'includes/db.php';
@@ -10,25 +15,24 @@
 <div class="container">
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="col-md-4">
-			<h3 class="col-md-12 text-center">Order Confirm</h3>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			<span class="col-md-2">23</span><span class="col-md-8"> This is the order </span><span class="col-md-2">£2.95</span>
-			
-			
-			
+			<h3 class="col-md-12 text-center">Order Confirmation</h3>
+			<?php
+				if(!empty($_SESSION["basket"])){		
+				$subTotal = 0;
+				foreach($_SESSION["basket"] as $b_item){
+					$itemId = $b_item["Item"]->ID;
+					echo ("<p>".$b_item["quantity"]."x ".$b_item["Item"]->Name." &pound".($b_item["quantity"]*$b_item["Item"]->Price)."</p>");
+					echo "</br>";
+					$subTotal += ($b_item["quantity"]*$b_item["Item"]->Price);
+				}
+				echo "<h3>Subtotal &pound".$subTotal."</h3>";
+				}
+				else{
+					echo "<p>You have no items added in your basket!</p>";
+				}	
+			?>
 			<button class="col-md-8 col-md-offset-2 btn btn-danger top10 margin-bottom">Change Order</button>
+			<button class="col-md-8 col-md-offset-2 btn btn-danger top10 margin-bottom">Proceed to Checkout</button>
 		</div>
 		
 		
