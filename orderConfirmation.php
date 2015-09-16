@@ -12,106 +12,38 @@
 
 
 
-<div class="container">
+<div class="container margin-bottom">
 	<div class="col-md-12 col-sm-12 col-xs-12">
-		<div class="col-md-4">
-			<h3 class="col-md-12 text-center">Order Confirmation</h3>
+		<div class="col-md-6 col-md-offset-1 basket">
+			<h2 class="col-md-12 text-center">Order Confirmation</h2>
 			<?php
 				if(!empty($_SESSION["basket"])){		
 				$subTotal = 0;
 				foreach($_SESSION["basket"] as $b_item){
 					$itemId = $b_item["Item"]->ID;
-					echo ("<p>".$b_item["quantity"]."x ".$b_item["Item"]->Name." &pound".($b_item["quantity"]*$b_item["Item"]->Price)."</p>");
+					echo ("<li class='col-md-11 col-md-offset-1 top5'><span class='top5 col-md-1'>".$b_item["quantity"]."x </span><span class='top5 col-md-8'>".$b_item["Item"]->Name."</span><span class='col-md-3 top5'> &pound".($b_item["quantity"]*$b_item["Item"]->Price)."</span></li>");
 					echo "</br>";
 					$subTotal += ($b_item["quantity"]*$b_item["Item"]->Price);
 				}
-				echo "<h3>Subtotal &pound".$subTotal."</h3>";
+				echo "<h2 class='col-md-8 text-center col-md-offset-2 pull-right'>Subtotal &pound".$subTotal."</h2>";
 				}
 				else{
-					echo "<p>You have no items added in your basket!</p>";
+					echo "<p class='col-md-10 col-md-offset-4'>You have no items added in your basket!</p>";
 				}	
 			?>
-			<button class="col-md-8 col-md-offset-2 btn btn-danger top10 margin-bottom">Change Order</button>
-			<button class="col-md-8 col-md-offset-2 btn btn-danger top10 margin-bottom">Proceed to Checkout</button>
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="col-md-4">
 			
-			<div class="col-md-12">
-				<h3 class="col-md-12 text-center">Confirm Address</h3
-				<label class="radio-inline col-md-3">
-					<input type="radio" name="optradio"> Collection
-				</label>
-				
-				<label class="radio-inline col-md-6 col-md-offset-1">
-					<input type="radio" name="optradio">Delivery
-				</label>
-				
-				
-				<div class="col-md-12">
-					<h4 class="col-md-12"> Your Current address</h4>
-					<hr class="col-md-12"/>
-					<p>Flat A1301, Room D</p>
-					<p>20 Duke Street</p>
-					<p>Southampton</p>
-					<p>Hampshire</p>
-					<p>SO14 3ET</p>
-				</div>
-				
-				<form action="#">
-					<div class="form-group col-md-12  col-sm-6 col-xs-12">
-						<h4 class="col-md-12">Add a new address</h4>
-						<hr class="col-md-12"/>
-						<h5>House name / Door no*</h5>
-						<input type="email" class="form-control text-capitalize">
-						
-						<div class="form-group col-md-14  col-sm-14 col-xs-14">
-							<h5>Street name*</h5>
-							<input type="email" class="form-control text-capitalize">
-						</div>
-			  		</div>
-			  		
-			  		<div class="form-group col-md-12 col-sm-6 col-xs-12">
-						<h5>Town Name*</h5>
-						<input type="email" class="form-control text-capitalize">
-						
-						<div class="form-group col-md-14 col-sm-14 col-xs-14">
-							<h5>Country Name</h5>
-							<input type="email" class="form-control text-capitalize">
-						</div>
-			  		</div>
-			  		
-			  		<div class="form-group col-md-12 col-sm-6 col-xs-12">
-						<h5>POSTCODE*</h5>
-						<input type="email" class="form-control text-uppercase">
-						
-			  		</div>
-			  		<button class="col-md-8 col-md-offset-2 btn btn-danger top10 margin-bottom">Update</button>
-				</form>	
+			<div class="col-md-6 col-md-offset-5 basket">
+				<a href="addressConfirmation.php"><button class="col-md-12 btn btn-danger top10">Proceed to Checkout</button></a>
+			
+				<a href="order_online.php"><h4 class="col-md-8 col-md-offset-2 text-center top10">Change Order</h4></a>
 			</div>
-		</div>
-		
-		
-		
-		<div class="col-md-4">
-			<h3 class="col-md-12 text-center">Payment</h3>
-			<label class="radio-inline col-md-3 col-md-offset-2">
-					<input type="radio" name="optradio"> Cash
-				</label>
-				
-				<label class="radio-inline col-md-6 col-md-offset-1">
-					<input type="radio" name="optradio">Card
-				</label>
 			
-			<a href="sucessful_order.php"><button class="col-md-8 col-md-offset-2 btn btn-danger margin-bottom top10">Make a Order</button></a>
 		</div>
+		
+		<?php
+			
+			include_once 'partials/user_menu.php';
+		?>
 	</div>	
 </div>
 	
