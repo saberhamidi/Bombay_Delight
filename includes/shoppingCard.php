@@ -40,8 +40,7 @@
 						}
 
 					}
-			}
-											
+			}								
 		include("../partials/iterateBasket.php");
 	echo '</response>';
 ?>
