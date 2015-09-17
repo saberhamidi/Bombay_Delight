@@ -16,7 +16,7 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="col-md-6 col-md-offset-1">
 			<div class="col-md-12">
-				<h3 class="col-md-12 text-center">Payment</h3>
+				<h3 class="col-md-12 text-center">Payments</h3>
 				<label class="radio-inline col-md-3 col-md-offset-2">
 					<input type="radio" name="optradio"> Cash
 				</label>
