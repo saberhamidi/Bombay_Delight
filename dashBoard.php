@@ -17,13 +17,13 @@
 		
 		
 		<div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Profile</h3></a>
+			<a class="jumbotron col-md-12" href="profile.php"><h3 class="text-center">Profile</h3></a>
 		</div>
 		<div class="col-md-3 col-sm-6 col-xs-12">
 			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Address Book</h3></a>
 		</div>
 		<div class="col-md-3 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Order History</h3></a>
+			<a class="jumbotron col-md-12" href="order_history.php"><h3 class="text-center">Order History</h3></a>
 		</div>
 		<div class="col-md-3 col-sm-6 col-md-offset-1 col-xs-12">
 			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Payments</h3></a>

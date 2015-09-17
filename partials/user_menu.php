@@ -2,7 +2,7 @@
 		<ul class="text-right margine_right">
 			<a href="profile.php"><li>Profile</li></a>
 			<a href="dashBoard.php"><li>Dashboard</li></a>
-			<a href="#"><li>Order History</li></a>
+			<a href="order_history.php"><li>Order History</li></a>
 			<a href="#"><li>Address Book</li></a>
 			<a href="#"><li>Payment Details</li></a>
 			<a href="#"><li>Change Email & Password</li></a>
