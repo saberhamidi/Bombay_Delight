@@ -13,26 +13,26 @@
 
 	<div class="container col-md-12 col-sm-12 col-xs-12">
 		
-		<h3 class="col-md-12 col-sm-12 col-xs-12 text-center">Welcome back: Saber</h3>
+		<h3 class="col-md-12 col-sm-12 col-xs-12 text-center">Welcome to Dshbord: Saber</h3>
 		
 		
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12" href="#"><h2 class="text-center">Profile</h2></a>
+		<div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12">
+			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Profile</h3></a>
 		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12" href="#"><h2 class="text-center">View Orders</h2></a>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Address Book</h3></a>
 		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12" href="#"><h2 class="text-center">Payments</h2></a>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Order History</h3></a>
 		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12" href="#"><h2 class="text-center">New Orders</h2></a>
+		<div class="col-md-3 col-sm-6 col-md-offset-1 col-xs-12">
+			<a class="jumbotron col-md-12" href="#"><h3 class="text-center">Payments</h3></a>
 		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12" href="#"><h2 class="text-center">Menu</h2></a>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a class="jumbotron col-md-12" href="#"><h4 class="text-center">Change Email & Password</h4></a>
 		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a class="jumbotron col-md-12 margin-bottom" href="#"><h2 class="text-center">Others</h2></a>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a class="jumbotron col-md-12 margin-bottom btn-danger" href="logout.php"><h3 class="text-center">Logout</h3></a>
 		</div>
 		
 	</div>

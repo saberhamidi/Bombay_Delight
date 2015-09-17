@@ -85,7 +85,7 @@
 						<input type="email" class="form-control text-uppercase">
 						
 			  		</div>
-			  		<a href="#"><button class="col-md-8 col-md-offset-2 btn btn-danger top10 margin-bottom">Update</button></a>
+			  		<a href="#"><button class="col-md-8 col-md-offset-2 btn btn-info top10 margin-bottom">Update</button></a>
 				</form>	
 			</div>
 		</div>
