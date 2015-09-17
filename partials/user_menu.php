@@ -1,5 +1,5 @@
 <div class="col-md-5 data_menu">
-		<ul class="text-right margine_right">
+		<ul class="text-right margine_right margin-bottom">
 			<a href="profile.php"><li>Profile</li></a>
 			<a href="dashBoard.php"><li>Dashboard</li></a>
 			<a href="order_history.php"><li>Order History</li></a>
