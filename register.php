@@ -1,5 +1,10 @@
 <?php
 	
+	session_start();
+	if(isset($_SESSION["loggedIn"]) and $_SESSION["loggedIn"] == true){
+		
+		header("location: dashBoard.php");
+	}
 	include_once 'includes/header.php';
 ?>
 
@@ -93,26 +98,6 @@
 		</form>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php
 	

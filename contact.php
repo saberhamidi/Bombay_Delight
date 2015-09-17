@@ -1,7 +1,6 @@
 <?php
-	
+	session_start();
 	include_once 'includes/header.php';
-	include 'includes/db.php';
 ?>
 
 <div id="fb-root"></div>

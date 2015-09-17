@@ -1,7 +1,11 @@
 <?php
-	
 	include_once 'includes/header.php';
-	include_once 'includes/db.php';
+	
+	session_start();
+	if(isset($_SESSION["loggedIn"]) and $_SESSION["loggedIn"] == true){
+		
+		header("location: dashBoard.php");
+	}
 ?>
 
 
