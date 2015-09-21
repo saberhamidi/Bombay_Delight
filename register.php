@@ -11,7 +11,7 @@
 
 <div class="container">
 	<div class="col-md-12 col-sm-12 co-xs-12">
-		<form onsubmit="return validateRegister(this)" class="col-md-12 col-sm-12 co-xs-12">
+		<form method = "post" action ="registerProcess.php" onsubmit="return validateRegister(this)" class="col-md-12 col-sm-12 co-xs-12">
 			
 			<h3 class="col-md-12 col-sm-12 text-center">Personal details ...</h3><hr class="col-md-12"/>
 			

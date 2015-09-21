@@ -19,7 +19,7 @@
 			$userName = test_input($_POST["userName"]);
 			$pass = test_input($_POST["password"]);
 			
-			if (!preg_match("/^[a-zA-Z0-9 ]*$/",$pass)) {
+			if (!preg_match("/^[a-zA-Z0-9]*$/",$pass)) {
 			$validate =false;
 			$error =2;
 			}
