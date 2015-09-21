@@ -55,11 +55,9 @@ function validateRegister(form){
 				var password=form.password.value.trim();
 				var cpassword = form.cpassword.value.trim();
 				var tel = form.tel.value.trim();
-				var mobile = form.mobile.value.trim();
 				var house = form.house.value.trim();
 				var street = form.street.value.trim();
 				var town = form.town.value.trim();
-				var count = form.count.value.trim();
 				var post = form.post.value.trim();
 				
 				var validated =true;
