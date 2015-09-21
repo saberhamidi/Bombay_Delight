@@ -154,24 +154,7 @@ function validateRegister(form){
 				    }		
 				else{
 				    setCorrect(document.getElementById("tel"));
-				    }
-				if(isNaN(mobile)){
-				    setError(document.getElementById("mobile"));
-				    validated=false;
-				    }
-							
-				else{
-				    setCorrect(document.getElementById("mobile"));
-				    }
-				if(mobile.length<=0){
-				    setError(document.getElementById("mobile"));
-				    validated=false;
-				    }
-							
-				else{
-				    setCorrect(document.getElementById("mobile"));
-				    }
-				    
+				    }   
 				if(house.length<=0){
 				    setError(document.getElementById("house"));
 				    validated=false;
@@ -210,22 +193,6 @@ function validateRegister(form){
 				
 				else{
 				    setError(document.getElementById("town"));
-				    validated=false;
-				    }
-				if(count.length<=0){
-				    setError(document.getElementById("count"));
-				    validated=false;
-				    }
-							
-				else{
-				    setCorrect(document.getElementById("count"));
-				    }
-				if(isNaN(count)){
-				    setCorrect(document.getElementById("count"));
-				}
-				
-				else{
-				    setError(document.getElementById("count"));
 				    validated=false;
 				    }
 				if(post.length<=0){
