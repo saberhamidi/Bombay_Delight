@@ -46,18 +46,13 @@
   			<div class="form-group col-md-3 col-sm-6 col-xs-12">
 				<h5 id="tel">Tel*</h5>
 				<input name ="tel" type="text" class="form-control">
-				
-	  			<div class="form-group col-md-14 col-sm-14 col-xs-14">
-					<h5 id="mobile">Mobile</h5>
-					<input name="mobile" type="text" class="form-control">
-	  			</div>
   			</div>
   			
   			
   			<h3 class="col-md-12 col-sm-12  col-xs-12 text-center">Delivery address ...</h3><hr class="col-md-12"/>
   			
   			
-  			<div class="form-group col-md-3 col-md-offset-1  col-sm-6 col-xs-12">
+  			<div class="form-group col-md-3 col-md-offset-3  col-sm-6 col-xs-12">
 				<h5 id="house">House name / Door no*</h5>
 				<input name="house" type="text" class="form-control text-capitalize">
 				
@@ -70,15 +65,8 @@
 				<h5 id ="town">Town Name*</h5>
 				<input name="town" type="text" class="form-control text-capitalize">
 				
-	  			<div class="form-group col-md-14 col-sm-14 col-xs-14">
-					<h5 id="count">Country Name</h5>
-					<input name="count" type="text" class="form-control text-capitalize">
-	  			</div>
-  			</div>
-  			<div class="form-group col-md-3 col-sm-6 col-xs-12">
 				<h5 id="post">POSTCODE*</h5>
 				<input name="post" type="text" class="form-control text-uppercase">
-				
   			</div>
   			
   			
