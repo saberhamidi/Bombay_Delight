@@ -36,7 +36,7 @@
 		}
 		else{
 			$conn->query("INSERT INTO user (firstname, surename, email, password, tel) VALUES('$firstName','$lastName','$email','$password','$telephon')");
-			$conn->query("INSERT INTO address (door_no, street_name, town_name, postcode, user_id) VALUES('$dorNumber','$streetName','$town','$postcode','$email')");
+			$conn->query("INSERT INTO address (door_no, postcode, street_name, town_name, user_id) VALUES('$dorNumber','$postcode','$streetName','$town','$email')");
 			
 			$_SESSION["username"] = $email;
 			$_SESSION["password"] = $password;
