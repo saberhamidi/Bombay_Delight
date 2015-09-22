@@ -1,4 +1,4 @@
-<div class="col-md-5 data_menu">
+<div class="col-md-12 data_menu">
 		<ul class="text-right margine_right margin-bottom">
 			<a href="profile.php"><li>Profile</li></a>
 			<a href="dashBoard.php"><li>Dashboard</li></a>

@@ -14,7 +14,9 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css.map">	
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type = "text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 		<script type = "text/javascript" src="js/myScript.js"></script>
+		<script type="text/javascript" src="js/jQuery.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		
 		
