@@ -74,15 +74,13 @@
 		        //Save the current position
 		        $x=$this->GetX();
 		        $y=$this->GetY();
-		        //Draw the border
-		        //$this->Rect($x,$y,$w,$h);
-		        //Print the text
 		        $this->MultiCell($w,5,$data[$i],0,$a);
 		        //Put the position to the right of the cell
 		        $this->SetXY($x+$w,$y);
 		    }
 		    //Go to the next line
 		    $this->Ln($h);
+		    $this->Ln(2);
 		}
 		
 		function CheckPageBreak($h)
@@ -146,15 +144,35 @@
 	}
 	$pdf = new PDF ("P","mm","a5");
 	$pdf->AddPage();
-	$pdf->SetFont('Arial','',8);
+	$pdf->SetFont('Arial','',10);
 	
 	//Table with 20 rows and 4 columns
 	$pdf->SetWidths(array(24,90,16,40));
 	srand(microtime()*1000000);
+	$subtotal = 0;
 	for($i=0;$i<count($_SESSION["basket"]);$i++){
 		$quantity =$_SESSION["basket"][$i]["quantity"];
-	    $pdf->Row(array($quantity."x", $_SESSION["basket"][$i]["Item"]->Name, $_SESSION["basket"][$i]["Item"]->Price*$quantity));
+		$price = $_SESSION["basket"][$i]["Item"]->Price;
+	    $pdf->Row(array($quantity."x", $_SESSION["basket"][$i]["Item"]->Name.": ".$_SESSION["basket"][$i]["Item"]->Description, $price*$quantity));
+	    $subtotal += ($price*$quantity);
 	}
+	$pdf->SetFont('Arial','B',12);
+	$pdf->MultiCell(130,10," Subtotal    ".iconv("UTF-8", "ISO-8859-1", "£").$subtotal,0,"R");
+	
+	$pdf->SetFont('Arial','',10);
+	$pdf->line(10,$pdf->GetY(),140,$pdf->GetY());
+	$pdf->MultiCell(130,5,"Note: Please make sure my food is not spicy!",0,"L");
+	$pdf->Ln();
+	$pdf->MultiCell(60,5,"Customer Info:",0,"L");
+	$pdf->MultiCell(60,5,"Saber Hamidi",0,"L");
+	$pdf->MultiCell(60,5,"100 Ourwebsite Road",0,"L");
+	$pdf->MultiCell(60,5,"Southampton",0,"L");
+	$pdf->MultiCell(60,5,"SO15 3FF",0,"L");
+	$pdf->Ln();
+	$pdf->MultiCell(60,5,"Tell: 07788998764",0,"L");
+	
+	$pdf->Ln();
+	$pdf->MultiCell(80,5,"Paying upon Delivery - (The order is NOT PAID!)",0,"L");
 	$filename="Orders/test.pdf";
 	$pdf->Output();
 	
