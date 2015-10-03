@@ -1,3 +1,26 @@
+function deliveryMethod(){
+	$("document").ready(function(){
+		if($("#total").length===1){
+			var dm =$('input[name=method]:checked').val();
+			
+			if(dm === "delivery" && parseFloat($("#total").text()) <12){ 	
+				$("#checkout").attr( "disabled", "disabled");
+				document.getElementById("minDelivery").innerHTML ="You need to spend &pound12.00 or more to order for delivery!";
+			}
+			
+			else{
+				
+				if(document.getElementById("checkout").hasAttribute("disabled")){
+					
+					$("#checkout").removeAttr("disabled");
+					document.getElementById("minDelivery").innerHTML ="";
+				}
+			}
+		}
+
+	})
+}
+
 function process(id) {
   if (id=="") {
     document.getElementById("items").innerHTML="";
@@ -14,7 +37,8 @@ function process(id) {
       document.getElementById("items").innerHTML=xmlhttp.responseText;
     }
   }
-  xmlhttp.open("GET","includes/shoppingCard.php?id="+id,true);
+  var d_method = $('input[name=method]:checked').val();
+  xmlhttp.open("GET","includes/shoppingCard.php?id="+id+"&method="+d_method,true);
   xmlhttp.send();
 }
 
@@ -34,7 +58,8 @@ function removeItem(id){
       document.getElementById("items").innerHTML=xmlhttp.responseText;
     }
   }
-  xmlhttp.open("GET","includes/removeItem.php?id="+id,true);
+  var d_method = $('input[name=method]:checked').val();
+  xmlhttp.open("GET","includes/removeItem.php?id="+id+"&method="+d_method,true);
   xmlhttp.send();
 }
 
