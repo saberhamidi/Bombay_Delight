@@ -12,9 +12,9 @@
 
 
 
-<div class="container margin-bottom">
+<div class="container margin-bottom ">
 	<div class="col-md-12 col-sm-12 col-xs-12">
-		<div class="col-md-6 col-md-offset-1 basket">
+		<div class="col-md-5 basket">
 			<h2 class="col-md-12 text-center">Order Confirmation</h2>
 			<?php
 				if(!empty($_SESSION["basket"])){		
@@ -35,15 +35,16 @@
 			<div class="col-md-6 col-md-offset-5 basket">
 				<a href="addressConfirmation.php"><button class="col-md-12 btn btn-danger top10">Proceed to Checkout</button></a>
 			
-				<a href="order_online.php"><h4 class="col-md-8 col-md-offset-2 text-center top10">Change Order</h4></a>
+				<a href="order_online.php"><h4 class="col-md-12 col-md-offset-2  top10">Change Order</h4></a>
 			</div>
 			
 		</div>
-		
-		<?php
-			
-			include_once 'partials/user_menu.php';
-		?>
+		<div class="col-md-7">
+			<?php
+				
+				include_once 'partials/user_menu.php';
+			?>
+		</div>
 	</div>	
 </div>
 	

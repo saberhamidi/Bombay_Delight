@@ -261,7 +261,21 @@ bottom_margin{
 	color: black;
 }
 
-.data_menu li:hover{
+.data_menu{
+	width: 60%;
+	float: right;
+}
+
+.data_menu a{
+	margin-top: 5px;
+	width: 100%;
+}
+
+.data_menu u{
+	border: 2px solid white;
+}
+
+data_menu li:hover{
 	text-decoration: underline;
 }
 

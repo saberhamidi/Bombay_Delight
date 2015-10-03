@@ -1,7 +1,7 @@
 $("document").ready(function() {
 	
 	
-	$("#coll_div").hide();
+	//$("#coll_div").hide();
 	$("#form_add_adres").hide();
 	
 	$("#ck_box_delivery").click(function(){
