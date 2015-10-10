@@ -1,3 +1,8 @@
+$("document").ready(function(){
+	
+	$("#chanPass").fancybox();
+});
+
 function deliveryMethod(){
 	$("document").ready(function(){
 		if($("#total").length===1){

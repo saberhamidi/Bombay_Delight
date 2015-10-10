@@ -17,10 +17,5 @@
 	</div>
 </footer>
 
-		
-<!-- This include fulction will add all the jQuery functions -->
-	<?php include_once 'includes/bottom_jQuery_script.php';?>	
-	<!-- End of the page design in main page -->
-	
 	</body>
 </html>
