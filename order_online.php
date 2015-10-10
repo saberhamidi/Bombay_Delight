@@ -49,7 +49,7 @@
 		</div>
 	
 		<div class="container col-md-3 text-center">
-			<h3><u>Shopping Chart</u></h3>
+			<h3 class=""><u>Shopping Chart</u></h3>
 			<label class="radio-inline col-md-3 col-md-offset-3 text-center">
 				<input type="radio" value="delivery" onchange ="deliveryMethod()" checked="checked" id="ck_box_delivery" name="method"/>Delivery
 			</label>

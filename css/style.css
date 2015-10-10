@@ -283,6 +283,20 @@ data_menu li:hover{
 }
 
 
+.remove_items{
+	width: 8%;
+	padding-left: 5px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 3px;
+}
+
+.items_name{
+	padding: 5px;
+}
+
+
+
 
 
 
